@@ -13,7 +13,7 @@ $route = new \Slim\App(new \Slim\Container(['settings' => ['displayErrorDetails'
 $mw = function (Request $request, Response $response, $next) use($view,$ctrl) {
     $view->subFolder = $request->getUri()->getBasePath();
     $view->domain = $request->getUri()->getHost();
-    $view->path = $request->getUri()->getPath();
+    $view->path =urldecode($request->getUri()->getPath());
     parse_str($request->getUri()->getQuery(), $view->GET);
     $response = $next($request, $response);
     return $response;

@@ -1,0 +1,13 @@
+include ../../config.pug
+include  ../../mixins
+
+html
+    head
+        meta(charset=charset)
+        title
+            block title
+            =' - '+siteName
+        include ../resources
+    body
+        .container
+            block content

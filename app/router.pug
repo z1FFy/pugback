@@ -1,9 +1,13 @@
 //Pug page router
-
 case path
     when '/'
         include pages/home
-    when 'contact'
+
+    when 'home'
+        include pages/home
+
+    when 'Контакты'
         include pages/contact
+
     default
         include pages/404
