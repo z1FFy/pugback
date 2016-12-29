@@ -25,7 +25,9 @@ class View {
 
 	function render($view,$data=null)
 	{
-		$this->data['sitePath'] = 'http://' . $this->domain . $this->subFolder;
+        $this->data['domain'] = $this->domain;
+        $this->data['subFolder'] = $this->subFolder;
+        $this->data['sitePath'] = 'http://' . $this->domain . $this->subFolder;
 		$this->data['resPath'] = $this->data['sitePath'] . '/app/static';
 		$this->data['path'] = $this->path;
 		$this->data['GET'] = $this->GET;
