@@ -4,21 +4,19 @@
  
   - app/config.pug
  
- 
-	- siteName = 'Example';
-	- charset = 'utf-8';
- 
+		- siteName = 'Example';
+		- charset = 'utf-8';
+	 
   - app/router.pug
  
- 
-     //Pug page router
-     case path
-	    when '/'
-		include pages/home
-	    when 'contact'
-		include pages/contact
-	    default
-		 include pages/404
+		 //Pug page router
+		 case path
+			when '/'
+				include pages/home
+			when 'contact'
+				include pages/contact
+			default
+		 		include pages/404
 		 
 		 
   - app/pages/home.pug
