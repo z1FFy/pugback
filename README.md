@@ -2,7 +2,13 @@
 
 **Usage:** 
  
- app/router.pug
+  - app/config.pug
+ 
+ 
+	- siteName = 'Example';
+	- charset = 'utf-8';
+ 
+  - app/router.pug
  
  
      //Pug page router
@@ -15,7 +21,8 @@
 		 include pages/404
 		 
 		 
- app/pages/home.pug
+  - app/pages/home.pug
+	 
 	 
 	extends ../templates/main
 	block title
@@ -30,6 +37,26 @@
 		p Route path: #{path}
 		p GET params: !{GET}
 		
+		
+- app/templates/main.php 
+	
+		include ../config.pug
+		html
+			head
+				meta(charset=charset)
+				title
+					block title
+					=' - '+siteName
+				script(type='text/javascript', src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js')
+				link(rel='stylesheet', href='//netdna.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css')
+				link(rel='stylesheet', href='https://bootswatch.com/paper/bootstrap.min.css')
+				link(rel='stylesheet', href='#{resPath}/css/styles.css')
+				script(src='//netdna.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js')
+				body
+					div.container
+							div.content
+									block content
+			
 		
 Result: 
 
