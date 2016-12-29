@@ -57,36 +57,30 @@
 		
 Result: 
 
-		<html>
-			<head>
-				<meta charset="utf-8">
-				<title>
-					Home page 
-					 - Example 
-				</title>
-							<script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>      <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
-				<link rel="stylesheet" href="https://bootswatch.com/paper/bootstrap.min.css">
-				<link rel="stylesheet" href="http://localhost/pugback/app/static/css/styles.css">
-							<script src="//netdna.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>      <body>
-					<div class="container">
-						<div class="content">
-							<div class="container">
-								<p>
-									domain:
-									localhost 
-								</p>
-								<p>
-									subFolder:
-									/pugback 
-								</p>
-								<p>sitePath: http://localhost/pugback</p>
-								<p>resPath: http://localhost/pugback/app/static</p>
-								<p>Path: /</p>
-								<p>GET: []</p>
-							</div>
+	<html>
+		<head>
+			<meta charset="utf-8">
+			<title>
+				Home page 
+				 - Example 
+			</title>
+						<script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>      <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+			<link rel="stylesheet" href="https://bootswatch.com/paper/bootstrap.min.css">
+			<link rel="stylesheet" href="http://localhost/pugback/app/static/css/styles.css">
+						<script src="//netdna.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>      <body>
+				<div class="container">
+					<div class="content">
+						<div class="container">
+							<p>Domain: localhost</p>
+							<p>Sub folder: /pugback</p>
+							<p>Full site path: http://localhost/pugback</p>
+							<p>Path to do resource folder: http://localhost/pugback/app/static</p>
+							<p>Route path: /</p>
+							<p>GET params: []</p>
 						</div>
 					</div>
-				</body>
-			</head>
-		</html>
-   
+				</div>
+			</body>
+		</head>
+	</html>
+	 
