@@ -21,19 +21,18 @@
 		 
   - app/pages/home.pug
 	 
-	 
-	extends ../templates/main
-	block title
-	   ='Home page'
-	
-	block content
-	   .container
-		p Domain: #{domain}
-		p Sub folder: #{subFolder}
-		p Full site path: #{sitePath}
-		p Path to do resource folder: #{resPath}
-		p Route path: #{path}
-		p GET params: !{GET}
+		extends ../templates/main
+		block title
+			 ='Home page'
+		
+		block content
+			 .container
+			p Domain: #{domain}
+			p Sub folder: #{subFolder}
+			p Full site path: #{sitePath}
+			p Path to do resource folder: #{resPath}
+			p Route path: #{path}
+			p GET params: !{GET}
 		
 		
 - app/templates/main.php 
