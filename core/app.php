@@ -11,10 +11,10 @@ $view  = new View();
 $route = new \Slim\App(new \Slim\Container(['settings' => ['displayErrorDetails' => true]]));
 
 $mw = function (Request $request, Response $response, $next) use($view,$ctrl) {
-    $view->subFolder = $request->getUri()->getBasePath();
-    $view->domain = $request->getUri()->getHost();
+    $view->basePath = $request->getUri()->getBasePath();
+    $view->host = $request->getUri()->getHost();
     $view->path =urldecode($request->getUri()->getPath());
-    parse_str($request->getUri()->getQuery(), $view->GET);
+    parse_str($request->getUri()->getQuery(), $view->query);
     $response = $next($request, $response);
     return $response;
 };

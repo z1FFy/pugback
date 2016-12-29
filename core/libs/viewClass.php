@@ -13,9 +13,9 @@ class View {
 		$pug,
 		$data,
         $path,
-        $GET,
-		$domain,
-		$subFolder;
+        $query,
+		$host,
+		$basePath;
 	function __construct()
 	{
         $this->pug = new Pug\Pug([
@@ -25,12 +25,12 @@ class View {
 
 	function render($view,$data=null)
 	{
-        $this->data['domain'] = $this->domain;
-        $this->data['subFolder'] = $this->subFolder;
-        $this->data['sitePath'] = 'http://' . $this->domain . $this->subFolder;
+        $this->data['host'] = $this->host;
+        $this->data['basePath'] = $this->basePath;
+        $this->data['sitePath'] = 'http://' . $this->host . $this->basePath;
 		$this->data['resPath'] = $this->data['sitePath'] . '/app/static';
 		$this->data['path'] = $this->path;
-		$this->data['GET'] = $this->GET;
+		$this->data['query'] = $this->query;
 		if ($data!=null)
 			foreach ($data as $key => $item)
 				$this->data[$key] = $item;
