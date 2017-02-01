@@ -51,9 +51,9 @@
 			.container
 			    block content
 - app/templates/main/resources.php 
-		+js('http://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js')
-		+css('//netdna.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css')
-		+css('https://bootswatch.com/paper/bootstrap.min.css')
-		+css(resPath + '/css/styles.css')
-		+js('//netdna.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js')
+	+js('http://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js')
+	+css('//netdna.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css')
+	+css('https://bootswatch.com/paper/bootstrap.min.css')
+	+css(resPath + '/css/styles.css')
+	+js('//netdna.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js')
 
